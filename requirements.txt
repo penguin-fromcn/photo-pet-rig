@@ -1,0 +1,8 @@
+# Core builder (background removal is optional)
+numpy>=1.24
+Pillow>=10.0
+opencv-python-headless>=4.8
+
+# Optional: automatic first-pass background removal.
+# The model weights are downloaded by rembg on first use and have their own licenses.
+# rembg[cpu]>=2.0.50

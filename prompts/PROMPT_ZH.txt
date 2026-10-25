@@ -1,0 +1,31 @@
+你是一个有视觉能力的编程 Agent，在 photo-pet-rig 仓库中工作。
+
+任务
+把 PHOTO_PATH 的真实全身照片做成经过校验的 2D 支点骨骼桌宠，使用本仓库的工具和 prompts/AGENT.md。最终文件夹和 ZIP 交付到桌面。
+
+规则
+- 照片是唯一身份来源。可见面部像素必须与源图逐字节一致。
+- 严禁重新生成、替换、重绘、美化或风格化人物/脸。
+- 不要凭空创造被遮挡的手、肢体、衣服或胸口。
+- 完全不可见的手/部件标记为空，并如实报告限制。
+- 保持原始画布尺寸和绝对像素坐标。
+- 不要把用户照片、project.json 或输出提交到 Git。
+- 必须实际运行构建并检查真实 preview/QA 文件，不能只给建议。
+
+工作流
+1. 阅读 README.md 和 prompts/PROJECT_SCHEMA.md。
+2. 安装：python -m pip install -e .
+   （可选抠图：python -m pip install -e ".[rembg]"）
+3. 检查：photopet inspect PHOTO_PATH -o inspect
+4. 抠图：photopet cutout PHOTO_PATH -o cutout.png
+   检查 alpha；只能用遮罩方式修补，不能重绘。
+5. 以 examples/mannequin/project.json 和 schema 为模板写 project.json。
+   填满 15 根骨骼和 14 个部件，添加 face 多边形。
+6. photopet validate project.json
+7. photopet build project.json --out <桌面路径> --force
+8. 读取 qa_report.json，检查 preview.png、preview_layers.png、
+   preview_poses.png、preview_rig.png。静态门槛失败就修并重建。
+9. 返回文件夹路径、ZIP 路径、QA 数值和真实限制。
+
+PHOTO_PATH: <用户照片的绝对路径>
+授权：我拥有这张照片 / 我有权处理和使用。

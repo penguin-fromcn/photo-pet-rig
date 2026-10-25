@@ -1,0 +1,165 @@
+{
+  "generated_at": "2026-10-25T10:16:21+08:00",
+  "generator": "photo-pet-rig 0.1.0",
+  "source_sha256": "cdf66b5ff010ac129237852eaa60c5370580e596a23ce6b284956d3210a91576",
+  "canvas": [
+    900,
+    1600
+  ],
+  "summary": {
+    "status": "delivered_with_limitations",
+    "exact_layer_reassembly": true,
+    "face_pixels_unchanged": true,
+    "patches_hidden_at_rest": true,
+    "zero_enclosed_holes_at_rest": true,
+    "empty_body_layers": []
+  },
+  "checks": {
+    "all_asset_layers_rgba": true,
+    "all_layers_same_canvas": true,
+    "body_layer_pngs": 14,
+    "empty_body_layers": [],
+    "patch_count": 11,
+    "reassembly": {
+      "visible_pixels_compared": 445924,
+      "alpha_mismatch_pixels_gt1": 0,
+      "rgb_mismatch_pixels_gt1": 0,
+      "exact": true
+    },
+    "patches_invisible_at_rest": {
+      "alpha_mismatch_pixels_gt1": 0,
+      "rgb_mismatch_pixels_gt1": 0,
+      "exact": true
+    },
+    "holes": {
+      "rest_enclosed_holes": [],
+      "zero_enclosed_holes_at_rest": true,
+      "pose_tests_informational": {
+        "REST": [],
+        "WALK / A": [],
+        "WALK / B": [
+          {
+            "area": 9,
+            "bbox": [
+              563,
+              449,
+              5,
+              9
+            ]
+          },
+          {
+            "area": 5745,
+            "bbox": [
+              430,
+              1041,
+              33,
+              351
+            ]
+          },
+          {
+            "area": 26,
+            "bbox": [
+              433,
+              1109,
+              2,
+              26
+            ]
+          }
+        ],
+        "CLICK / LAND": []
+      },
+      "pose_test_note": "Pose renders are for visual QA. A narrow gap between the legs or arms can become an enclosed negative space at some angles; this is not the same as a hole inside a body layer. Check preview_poses.png visually."
+    },
+    "face": {
+      "polygon": [
+        [
+          372.0,
+          202.0
+        ],
+        [
+          440.0,
+          184.0
+        ],
+        [
+          512.0,
+          202.0
+        ],
+        [
+          540.0,
+          270.0
+        ],
+        [
+          500.0,
+          318.0
+        ],
+        [
+          450.0,
+          330.0
+        ],
+        [
+          392.0,
+          316.0
+        ],
+        [
+          360.0,
+          270.0
+        ]
+      ],
+      "pixel_count": 19854,
+      "polygon_foreground_ratio": 1.0,
+      "rgb_equal_to_source": true,
+      "alpha_min": 255,
+      "rgb_sha256": "132f9c3a667ea7d31bcfab275c8489591619f89d4b094f9eb3c5720927032f54"
+    },
+    "background": {
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_components": 2
+    },
+    "edge_cleanup": "RGB was replaced by nearby interior colour only for pixels with 0 < alpha < 255. Alpha and all opaque pixels are unchanged.",
+    "known_unsupported": [
+      "visible hands if their layers are empty",
+      "natural large arm swing if the source pose is crossed",
+      "profile/back views",
+      "facial expression animation",
+      "seam-free large-angle rotation"
+    ]
+  },
+  "layer_hashes": {
+    "head.png": "a3dc0817b7a0dc2aaf5dfe5031a2e415904e9c3e452617bf800c0f07117d0354",
+    "torso.png": "be122bda966c33077e63374f8c5004fb473c647203af0fdb7e335e8da350ffb6",
+    "upper_arm_left.png": "4b526b86c35df6752279008166dec6227fdebb045e276b2494cc2210668e4062",
+    "forearm_left.png": "cda458945bc949633725ba38f899d2b9cdcca92dd062109ebe4f3b40e8aff74f",
+    "hand_left.png": "1cd13838b939d2169cd6f602d6167f6800595256d463a07a1ddc0d1979b9d92f",
+    "upper_arm_right.png": "4c56777b55f9378c1c88e082d9a6708abb03f16f3c99702e0dd6a4aa4918a36f",
+    "forearm_right.png": "3ff1dba743ed60e74315af0565d090c57ecc22fe822f649acf7cad20759ccd4f",
+    "hand_right.png": "9102d1fb9bfb780abe21787ae906284fb0416c04d8d320634febeff81987fedd",
+    "thigh_left.png": "a5a5ec85f135fbfea4c4dc91a3f938893738863b71692a21bc7c700ccf18d9d4",
+    "shin_left.png": "e8f14a8b1ab519da9eaa75913da80057a5137ae181f56313df1953c0544fbfe5",
+    "foot_left.png": "cf85d15be2bfe2ebff9c9ebdf9712fd602a51e18d8d587f0c4fdbc654ece8e54",
+    "thigh_right.png": "6e1ca85ae4316814fff47613ef676aade366305e87c62037832e02a16cc1c551",
+    "shin_right.png": "d600f96729ff0759c5de7be42007e5c8b61887fabed3acbd12be2653e17fd100",
+    "foot_right.png": "0e7ab8108e3f9b0f396c60260fe0f58a4e29bb9695fb2cf56bbd62c0c9226116",
+    "patch_layers/patch_neck.png": "886d56c35424d80ac6c54d2b22707f4d4878cc359f00471b9bef9b5f25b436da",
+    "patch_layers/patch_shoulder_left.png": "186b0635ad5921a62cbfb27136437ee83e432abd73121c975946714c00f6a9ff",
+    "patch_layers/patch_shoulder_right.png": "ca4e29cfd75ee321d84ac6aaf1461dbc74d3f623fbfa86f43f57a8a5364029b7",
+    "patch_layers/patch_elbow_left.png": "b839efd1f10b9baffd3845420a9e127316c3aa3bb5547d4cc25ef2277f445f9a",
+    "patch_layers/patch_elbow_right.png": "77b4def39e16f3331059a207a89ecc46ec983b4b3becc6e66f375a4c2cc68f19",
+    "patch_layers/patch_hip_left.png": "5f1e925beb24669eb56dbbd560b584f4d5ba8397640acc8c6abb184ab03026de",
+    "patch_layers/patch_hip_right.png": "293d5b51531608b9c9273b0e18f8e5dd9ac53b7dca5dfe8b906af5cf57982acd",
+    "patch_layers/patch_knee_left.png": "3a8ce072bd90e521826b557c4c279ebcb8db509168750b9099fee350a94c6007",
+    "patch_layers/patch_knee_right.png": "19853ba6c5fd117733daa7e8392ea0d31fb97434bf9a8ae8d9fdd3d5e553600e",
+    "patch_layers/patch_ankle_left.png": "5593a1e32425f5fed908eee946296f33ce250df25d1d89da474dc5031c139148",
+    "patch_layers/patch_ankle_right.png": "2afcd0c6c5f19da7fd02d06f5281d5d9c0ef593e341657cc75e624c75fd1604a"
+  },
+  "reference_sha256": "385152d4dcf036d37d864d1dfc6bc926316c124261f5adba6f3d6286d4e491d8",
+  "notes": [
+    "No generative image model is used by the build step.",
+    "Patch layers are synthetic fabric fills and are hidden at rest.",
+    "A single-view photo cannot provide side/back or expression data."
+  ]
+}

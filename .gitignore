@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+build/
+dist/
+tests/_build_tmp/
+tests/_face_tmp/
+logs/
+*.log
+
+# Generated runtime state (the tracked examples/pet_config.example.json stays)
+/config.json
+/pet_config.json
+
+# Local inputs, personal photos and generated rigs
+private/
+inputs/
+outputs/
+*_pet_assets/
+*.zip
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Keep the intentionally public demo assets
+!examples/**/*.png
+!docs/**/*.png

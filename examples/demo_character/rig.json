@@ -1,0 +1,1481 @@
+{
+  "schema": "photopet/project@1",
+  "generator": "photo-pet-rig 0.1.0",
+  "generated_at": "2026-10-25T10:16:21+08:00",
+  "name": "mannequin_demo",
+  "slug": "mannequin-demo",
+  "canvas": {
+    "width": 900,
+    "height": 1600,
+    "origin": "top-left",
+    "units": "pixels",
+    "preserve_full_canvas": true,
+    "do_not_trim_layers": true
+  },
+  "source": {
+    "file": "photo.png",
+    "sha256": "cdf66b5ff010ac129237852eaa60c5370580e596a23ce6b284956d3210a91576",
+    "width": 900,
+    "height": 1600
+  },
+  "character": {
+    "reference": "character_original.png",
+    "visible_bbox": [
+      135,
+      109,
+      764,
+      1537
+    ],
+    "visible_alpha_pixels": 445924,
+    "ground_y": 1537,
+    "shadow_y": 1517,
+    "anchor": [
+      449.5,
+      1537
+    ],
+    "recommended_display_height_px": [
+      260,
+      420
+    ],
+    "recommended_scale": [
+      0.163,
+      0.263
+    ],
+    "facing": "front",
+    "naming": {
+      "left": "character-left = screen right",
+      "right": "character-right = screen left"
+    }
+  },
+  "render": {
+    "alpha_mode": "straight (non-premultiplied PNG)",
+    "blend": "source-over",
+    "premultiply_before_transform_and_filtering": true,
+    "resampling": "bilinear",
+    "rotation_pivot_units": "canvas pixels",
+    "note": "Load every layer at (0,0) on the full canvas. Rotate around pivots. Do not re-center or auto-trim individual layers."
+  },
+  "bones": {
+    "root": {
+      "parent": null,
+      "pivot": [
+        450.0,
+        815.0
+      ],
+      "layer": null,
+      "rotation_recommended_deg": [
+        -2.0,
+        2.0
+      ],
+      "rotation_safe_deg": [
+        -5.0,
+        5.0
+      ],
+      "translation_safe_px": {
+        "x": [
+          -60,
+          60
+        ],
+        "y": [
+          -30,
+          30
+        ]
+      }
+    },
+    "torso": {
+      "parent": "root",
+      "pivot": [
+        450.0,
+        815.0
+      ],
+      "layer": "torso.png",
+      "rotation_recommended_deg": [
+        -2.0,
+        2.0
+      ],
+      "rotation_safe_deg": [
+        -3.0,
+        3.0
+      ]
+    },
+    "head": {
+      "parent": "torso",
+      "pivot": [
+        450.0,
+        350.0
+      ],
+      "layer": "head.png",
+      "rotation_recommended_deg": [
+        -3.0,
+        3.0
+      ],
+      "rotation_safe_deg": [
+        -5.0,
+        5.0
+      ]
+    },
+    "upper_arm_left": {
+      "parent": "torso",
+      "pivot": [
+        588.0,
+        392.0
+      ],
+      "layer": "upper_arm_left.png",
+      "rotation_recommended_deg": [
+        -2.0,
+        2.0
+      ],
+      "rotation_safe_deg": [
+        -5.0,
+        5.0
+      ]
+    },
+    "forearm_left": {
+      "parent": "upper_arm_left",
+      "pivot": [
+        686.0,
+        590.0
+      ],
+      "layer": "forearm_left.png",
+      "rotation_recommended_deg": [
+        -1.5,
+        1.5
+      ],
+      "rotation_safe_deg": [
+        -4.0,
+        4.0
+      ]
+    },
+    "hand_left": {
+      "parent": "forearm_left",
+      "pivot": [
+        712.0,
+        790.0
+      ],
+      "layer": "hand_left.png",
+      "rotation_recommended_deg": [
+        0.0,
+        0.0
+      ],
+      "rotation_safe_deg": [
+        0.0,
+        0.0
+      ]
+    },
+    "upper_arm_right": {
+      "parent": "torso",
+      "pivot": [
+        312.0,
+        392.0
+      ],
+      "layer": "upper_arm_right.png",
+      "rotation_recommended_deg": [
+        -2.0,
+        2.0
+      ],
+      "rotation_safe_deg": [
+        -5.0,
+        5.0
+      ]
+    },
+    "forearm_right": {
+      "parent": "upper_arm_right",
+      "pivot": [
+        214.0,
+        590.0
+      ],
+      "layer": "forearm_right.png",
+      "rotation_recommended_deg": [
+        -1.5,
+        1.5
+      ],
+      "rotation_safe_deg": [
+        -4.0,
+        4.0
+      ]
+    },
+    "hand_right": {
+      "parent": "forearm_right",
+      "pivot": [
+        188.0,
+        790.0
+      ],
+      "layer": "hand_right.png",
+      "rotation_recommended_deg": [
+        0.0,
+        0.0
+      ],
+      "rotation_safe_deg": [
+        0.0,
+        0.0
+      ]
+    },
+    "thigh_left": {
+      "parent": "root",
+      "pivot": [
+        498.0,
+        815.0
+      ],
+      "layer": "thigh_left.png",
+      "rotation_recommended_deg": [
+        -4.5,
+        4.5
+      ],
+      "rotation_safe_deg": [
+        -7.0,
+        7.0
+      ]
+    },
+    "shin_left": {
+      "parent": "thigh_left",
+      "pivot": [
+        532.0,
+        1080.0
+      ],
+      "layer": "shin_left.png",
+      "rotation_recommended_deg": [
+        0.0,
+        8.0
+      ],
+      "rotation_safe_deg": [
+        -2.0,
+        14.0
+      ]
+    },
+    "foot_left": {
+      "parent": "shin_left",
+      "pivot": [
+        535.0,
+        1400.0
+      ],
+      "layer": "foot_left.png",
+      "rotation_recommended_deg": [
+        -2.5,
+        2.5
+      ],
+      "rotation_safe_deg": [
+        -5.0,
+        5.0
+      ]
+    },
+    "thigh_right": {
+      "parent": "root",
+      "pivot": [
+        402.0,
+        815.0
+      ],
+      "layer": "thigh_right.png",
+      "rotation_recommended_deg": [
+        -4.5,
+        4.5
+      ],
+      "rotation_safe_deg": [
+        -7.0,
+        7.0
+      ]
+    },
+    "shin_right": {
+      "parent": "thigh_right",
+      "pivot": [
+        368.0,
+        1080.0
+      ],
+      "layer": "shin_right.png",
+      "rotation_recommended_deg": [
+        0.0,
+        8.0
+      ],
+      "rotation_safe_deg": [
+        -2.0,
+        14.0
+      ]
+    },
+    "foot_right": {
+      "parent": "shin_right",
+      "pivot": [
+        365.0,
+        1400.0
+      ],
+      "layer": "foot_right.png",
+      "rotation_recommended_deg": [
+        -2.5,
+        2.5
+      ],
+      "rotation_safe_deg": [
+        -5.0,
+        5.0
+      ]
+    }
+  },
+  "joints": {
+    "root": {
+      "x": 450.0,
+      "y": 815.0,
+      "kind": "pelvis_root"
+    },
+    "torso": {
+      "x": 450.0,
+      "y": 815.0,
+      "kind": "waist"
+    },
+    "head": {
+      "x": 450.0,
+      "y": 350.0,
+      "kind": "neck_head_pivot"
+    },
+    "upper_arm_left": {
+      "x": 588.0,
+      "y": 392.0,
+      "kind": "shoulder"
+    },
+    "forearm_left": {
+      "x": 686.0,
+      "y": 590.0,
+      "kind": "elbow"
+    },
+    "hand_left": {
+      "x": 712.0,
+      "y": 790.0,
+      "kind": "wrist"
+    },
+    "upper_arm_right": {
+      "x": 312.0,
+      "y": 392.0,
+      "kind": "shoulder"
+    },
+    "forearm_right": {
+      "x": 214.0,
+      "y": 590.0,
+      "kind": "elbow"
+    },
+    "hand_right": {
+      "x": 188.0,
+      "y": 790.0,
+      "kind": "wrist"
+    },
+    "thigh_left": {
+      "x": 498.0,
+      "y": 815.0,
+      "kind": "hip"
+    },
+    "shin_left": {
+      "x": 532.0,
+      "y": 1080.0,
+      "kind": "knee"
+    },
+    "foot_left": {
+      "x": 535.0,
+      "y": 1400.0,
+      "kind": "ankle"
+    },
+    "thigh_right": {
+      "x": 402.0,
+      "y": 815.0,
+      "kind": "hip"
+    },
+    "shin_right": {
+      "x": 368.0,
+      "y": 1080.0,
+      "kind": "knee"
+    },
+    "foot_right": {
+      "x": 365.0,
+      "y": 1400.0,
+      "kind": "ankle"
+    },
+    "ground_anchor": {
+      "x": 449.5,
+      "y": 1537,
+      "kind": "ground_contact"
+    }
+  },
+  "layers": [
+    {
+      "id": "patch_neck",
+      "file": "patch_layers/patch_neck.png",
+      "bone": "torso",
+      "parent_bone": "root",
+      "pivot": [
+        450.0,
+        350.0
+      ],
+      "z_index": 0,
+      "rotation_recommended_deg": [
+        0.0,
+        0.0
+      ],
+      "rotation_safe_deg": [
+        0.0,
+        0.0
+      ],
+      "alpha_pixels": 31904,
+      "bbox": [
+        305,
+        270,
+        595,
+        430
+      ],
+      "sha256": "886d56c35424d80ac6c54d2b22707f4d4878cc359f00471b9bef9b5f25b436da",
+      "source_kind": "synthetic_repair_patch",
+      "visible_at_rest": false,
+      "empty": false,
+      "note": "Synthetic fabric fill sampled from nearby original pixels. Never visible at rest; only fills joint gaps."
+    },
+    {
+      "id": "patch_shoulder_left",
+      "file": "patch_layers/patch_shoulder_left.png",
+      "bone": "torso",
+      "parent_bone": "root",
+      "pivot": [
+        588.0,
+        392.0
+      ],
+      "z_index": 1,
+      "rotation_recommended_deg": [
+        0.0,
+        0.0
+      ],
+      "rotation_safe_deg": [
+        0.0,
+        0.0
+      ],
+      "alpha_pixels": 18341,
+      "bbox": [
+        482,
+        315,
+        666,
+        474
+      ],
+      "sha256": "186b0635ad5921a62cbfb27136437ee83e432abd73121c975946714c00f6a9ff",
+      "source_kind": "synthetic_repair_patch",
+      "visible_at_rest": false,
+      "empty": false,
+      "note": "Synthetic fabric fill sampled from nearby original pixels. Never visible at rest; only fills joint gaps."
+    },
+    {
+      "id": "patch_shoulder_right",
+      "file": "patch_layers/patch_shoulder_right.png",
+      "bone": "torso",
+      "parent_bone": "root",
+      "pivot": [
+        312.0,
+        392.0
+      ],
+      "z_index": 2,
+      "rotation_recommended_deg": [
+        0.0,
+        0.0
+      ],
+      "rotation_safe_deg": [
+        0.0,
+        0.0
+      ],
+      "alpha_pixels": 18430,
+      "bbox": [
+        233,
+        314,
+        418,
+        474
+      ],
+      "sha256": "ca4e29cfd75ee321d84ac6aaf1461dbc74d3f623fbfa86f43f57a8a5364029b7",
+      "source_kind": "synthetic_repair_patch",
+      "visible_at_rest": false,
+      "empty": false,
+      "note": "Synthetic fabric fill sampled from nearby original pixels. Never visible at rest; only fills joint gaps."
+    },
+    {
+      "id": "patch_elbow_left",
+      "file": "patch_layers/patch_elbow_left.png",
+      "bone": "upper_arm_left",
+      "parent_bone": "torso",
+      "pivot": [
+        686.0,
+        590.0
+      ],
+      "z_index": 3,
+      "rotation_recommended_deg": [
+        0.0,
+        0.0
+      ],
+      "rotation_safe_deg": [
+        0.0,
+        0.0
+      ],
+      "alpha_pixels": 10286,
+      "bbox": [
+        621,
+        527,
+        732,
+        653
+      ],
+      "sha256": "b839efd1f10b9baffd3845420a9e127316c3aa3bb5547d4cc25ef2277f445f9a",
+      "source_kind": "synthetic_repair_patch",
+      "visible_at_rest": false,
+      "empty": false,
+      "note": "Synthetic fabric fill sampled from nearby original pixels. Never visible at rest; only fills joint gaps."
+    },
+    {
+      "id": "patch_elbow_right",
+      "file": "patch_layers/patch_elbow_right.png",
+      "bone": "upper_arm_right",
+      "parent_bone": "torso",
+      "pivot": [
+        214.0,
+        590.0
+      ],
+      "z_index": 4,
+      "rotation_recommended_deg": [
+        0.0,
+        0.0
+      ],
+      "rotation_safe_deg": [
+        0.0,
+        0.0
+      ],
+      "alpha_pixels": 10335,
+      "bbox": [
+        168,
+        527,
+        279,
+        653
+      ],
+      "sha256": "77b4def39e16f3331059a207a89ecc46ec983b4b3becc6e66f375a4c2cc68f19",
+      "source_kind": "synthetic_repair_patch",
+      "visible_at_rest": false,
+      "empty": false,
+      "note": "Synthetic fabric fill sampled from nearby original pixels. Never visible at rest; only fills joint gaps."
+    },
+    {
+      "id": "patch_hip_left",
+      "file": "patch_layers/patch_hip_left.png",
+      "bone": "torso",
+      "parent_bone": "root",
+      "pivot": [
+        498.0,
+        815.0
+      ],
+      "z_index": 5,
+      "rotation_recommended_deg": [
+        0.0,
+        0.0
+      ],
+      "rotation_safe_deg": [
+        0.0,
+        0.0
+      ],
+      "alpha_pixels": 21023,
+      "bbox": [
+        407,
+        740,
+        589,
+        890
+      ],
+      "sha256": "5f1e925beb24669eb56dbbd560b584f4d5ba8397640acc8c6abb184ab03026de",
+      "source_kind": "synthetic_repair_patch",
+      "visible_at_rest": false,
+      "empty": false,
+      "note": "Synthetic fabric fill sampled from nearby original pixels. Never visible at rest; only fills joint gaps."
+    },
+    {
+      "id": "patch_hip_right",
+      "file": "patch_layers/patch_hip_right.png",
+      "bone": "torso",
+      "parent_bone": "root",
+      "pivot": [
+        402.0,
+        815.0
+      ],
+      "z_index": 6,
+      "rotation_recommended_deg": [
+        0.0,
+        0.0
+      ],
+      "rotation_safe_deg": [
+        0.0,
+        0.0
+      ],
+      "alpha_pixels": 21042,
+      "bbox": [
+        311,
+        740,
+        493,
+        890
+      ],
+      "sha256": "293d5b51531608b9c9273b0e18f8e5dd9ac53b7dca5dfe8b906af5cf57982acd",
+      "source_kind": "synthetic_repair_patch",
+      "visible_at_rest": false,
+      "empty": false,
+      "note": "Synthetic fabric fill sampled from nearby original pixels. Never visible at rest; only fills joint gaps."
+    },
+    {
+      "id": "patch_knee_left",
+      "file": "patch_layers/patch_knee_left.png",
+      "bone": "thigh_left",
+      "parent_bone": "root",
+      "pivot": [
+        532.0,
+        1080.0
+      ],
+      "z_index": 7,
+      "rotation_recommended_deg": [
+        0.0,
+        0.0
+      ],
+      "rotation_safe_deg": [
+        0.0,
+        0.0
+      ],
+      "alpha_pixels": 13073,
+      "bbox": [
+        464,
+        1017,
+        591,
+        1143
+      ],
+      "sha256": "3a8ce072bd90e521826b557c4c279ebcb8db509168750b9099fee350a94c6007",
+      "source_kind": "synthetic_repair_patch",
+      "visible_at_rest": false,
+      "empty": false,
+      "note": "Synthetic fabric fill sampled from nearby original pixels. Never visible at rest; only fills joint gaps."
+    },
+    {
+      "id": "patch_knee_right",
+      "file": "patch_layers/patch_knee_right.png",
+      "bone": "thigh_right",
+      "parent_bone": "root",
+      "pivot": [
+        368.0,
+        1080.0
+      ],
+      "z_index": 8,
+      "rotation_recommended_deg": [
+        0.0,
+        0.0
+      ],
+      "rotation_safe_deg": [
+        0.0,
+        0.0
+      ],
+      "alpha_pixels": 13097,
+      "bbox": [
+        309,
+        1017,
+        436,
+        1143
+      ],
+      "sha256": "19853ba6c5fd117733daa7e8392ea0d31fb97434bf9a8ae8d9fdd3d5e553600e",
+      "source_kind": "synthetic_repair_patch",
+      "visible_at_rest": false,
+      "empty": false,
+      "note": "Synthetic fabric fill sampled from nearby original pixels. Never visible at rest; only fills joint gaps."
+    },
+    {
+      "id": "patch_ankle_left",
+      "file": "patch_layers/patch_ankle_left.png",
+      "bone": "shin_left",
+      "parent_bone": "thigh_left",
+      "pivot": [
+        535.0,
+        1400.0
+      ],
+      "z_index": 9,
+      "rotation_recommended_deg": [
+        0.0,
+        0.0
+      ],
+      "rotation_safe_deg": [
+        0.0,
+        0.0
+      ],
+      "alpha_pixels": 9589,
+      "bbox": [
+        475,
+        1348,
+        596,
+        1452
+      ],
+      "sha256": "5593a1e32425f5fed908eee946296f33ce250df25d1d89da474dc5031c139148",
+      "source_kind": "synthetic_repair_patch",
+      "visible_at_rest": false,
+      "empty": false,
+      "note": "Synthetic fabric fill sampled from nearby original pixels. Never visible at rest; only fills joint gaps."
+    },
+    {
+      "id": "patch_ankle_right",
+      "file": "patch_layers/patch_ankle_right.png",
+      "bone": "shin_right",
+      "parent_bone": "thigh_right",
+      "pivot": [
+        365.0,
+        1400.0
+      ],
+      "z_index": 10,
+      "rotation_recommended_deg": [
+        0.0,
+        0.0
+      ],
+      "rotation_safe_deg": [
+        0.0,
+        0.0
+      ],
+      "alpha_pixels": 9578,
+      "bbox": [
+        304,
+        1348,
+        425,
+        1452
+      ],
+      "sha256": "2afcd0c6c5f19da7fd02d06f5281d5d9c0ef593e341657cc75e624c75fd1604a",
+      "source_kind": "synthetic_repair_patch",
+      "visible_at_rest": false,
+      "empty": false,
+      "note": "Synthetic fabric fill sampled from nearby original pixels. Never visible at rest; only fills joint gaps."
+    },
+    {
+      "id": "thigh_right",
+      "file": "thigh_right.png",
+      "bone": "thigh_right",
+      "parent_bone": "root",
+      "pivot": [
+        402.0,
+        815.0
+      ],
+      "z_index": 11,
+      "rotation_recommended_deg": [
+        -4.5,
+        4.5
+      ],
+      "rotation_safe_deg": [
+        -7.0,
+        7.0
+      ],
+      "alpha_pixels": 30880,
+      "bbox": [
+        305,
+        807,
+        448,
+        1147
+      ],
+      "sha256": "6e1ca85ae4316814fff47613ef676aade366305e87c62037832e02a16cc1c551",
+      "source_kind": "original_photo_pixels",
+      "visible_at_rest": true,
+      "empty": false,
+      "note": "Original source pixels; edge RGB is decontaminated only where alpha<255."
+    },
+    {
+      "id": "thigh_left",
+      "file": "thigh_left.png",
+      "bone": "thigh_left",
+      "parent_bone": "root",
+      "pivot": [
+        498.0,
+        815.0
+      ],
+      "z_index": 12,
+      "rotation_recommended_deg": [
+        -4.5,
+        4.5
+      ],
+      "rotation_safe_deg": [
+        -7.0,
+        7.0
+      ],
+      "alpha_pixels": 33206,
+      "bbox": [
+        434,
+        807,
+        594,
+        1148
+      ],
+      "sha256": "a5a5ec85f135fbfea4c4dc91a3f938893738863b71692a21bc7c700ccf18d9d4",
+      "source_kind": "original_photo_pixels",
+      "visible_at_rest": true,
+      "empty": false,
+      "note": "Original source pixels; edge RGB is decontaminated only where alpha<255."
+    },
+    {
+      "id": "shin_right",
+      "file": "shin_right.png",
+      "bone": "shin_right",
+      "parent_bone": "thigh_right",
+      "pivot": [
+        368.0,
+        1080.0
+      ],
+      "z_index": 13,
+      "rotation_recommended_deg": [
+        0.0,
+        8.0
+      ],
+      "rotation_safe_deg": [
+        -2.0,
+        14.0
+      ],
+      "alpha_pixels": 31804,
+      "bbox": [
+        313,
+        1070,
+        421,
+        1395
+      ],
+      "sha256": "d600f96729ff0759c5de7be42007e5c8b61887fabed3acbd12be2653e17fd100",
+      "source_kind": "original_photo_pixels",
+      "visible_at_rest": true,
+      "empty": false,
+      "note": "Original source pixels; edge RGB is decontaminated only where alpha<255."
+    },
+    {
+      "id": "shin_left",
+      "file": "shin_left.png",
+      "bone": "shin_left",
+      "parent_bone": "thigh_left",
+      "pivot": [
+        532.0,
+        1080.0
+      ],
+      "z_index": 14,
+      "rotation_recommended_deg": [
+        0.0,
+        8.0
+      ],
+      "rotation_safe_deg": [
+        -2.0,
+        14.0
+      ],
+      "alpha_pixels": 31812,
+      "bbox": [
+        478,
+        1070,
+        587,
+        1395
+      ],
+      "sha256": "e8f14a8b1ab519da9eaa75913da80057a5137ae181f56313df1953c0544fbfe5",
+      "source_kind": "original_photo_pixels",
+      "visible_at_rest": true,
+      "empty": false,
+      "note": "Original source pixels; edge RGB is decontaminated only where alpha<255."
+    },
+    {
+      "id": "foot_right",
+      "file": "foot_right.png",
+      "bone": "foot_right",
+      "parent_bone": "shin_right",
+      "pivot": [
+        365.0,
+        1400.0
+      ],
+      "z_index": 15,
+      "rotation_recommended_deg": [
+        -2.5,
+        2.5
+      ],
+      "rotation_safe_deg": [
+        -5.0,
+        5.0
+      ],
+      "alpha_pixels": 21628,
+      "bbox": [
+        277,
+        1387,
+        432,
+        1537
+      ],
+      "sha256": "0e7ab8108e3f9b0f396c60260fe0f58a4e29bb9695fb2cf56bbd62c0c9226116",
+      "source_kind": "original_photo_pixels",
+      "visible_at_rest": true,
+      "empty": false,
+      "note": "Original source pixels; edge RGB is decontaminated only where alpha<255."
+    },
+    {
+      "id": "foot_left",
+      "file": "foot_left.png",
+      "bone": "foot_left",
+      "parent_bone": "shin_left",
+      "pivot": [
+        535.0,
+        1400.0
+      ],
+      "z_index": 16,
+      "rotation_recommended_deg": [
+        -2.5,
+        2.5
+      ],
+      "rotation_safe_deg": [
+        -5.0,
+        5.0
+      ],
+      "alpha_pixels": 21630,
+      "bbox": [
+        467,
+        1387,
+        622,
+        1537
+      ],
+      "sha256": "cf85d15be2bfe2ebff9c9ebdf9712fd602a51e18d8d587f0c4fdbc654ece8e54",
+      "source_kind": "original_photo_pixels",
+      "visible_at_rest": true,
+      "empty": false,
+      "note": "Original source pixels; edge RGB is decontaminated only where alpha<255."
+    },
+    {
+      "id": "torso",
+      "file": "torso.png",
+      "bone": "torso",
+      "parent_bone": "root",
+      "pivot": [
+        450.0,
+        815.0
+      ],
+      "z_index": 17,
+      "rotation_recommended_deg": [
+        -2.0,
+        2.0
+      ],
+      "rotation_safe_deg": [
+        -3.0,
+        3.0
+      ],
+      "alpha_pixels": 131178,
+      "bbox": [
+        285,
+        338,
+        614,
+        837
+      ],
+      "sha256": "be122bda966c33077e63374f8c5004fb473c647203af0fdb7e335e8da350ffb6",
+      "source_kind": "original_photo_pixels",
+      "visible_at_rest": true,
+      "empty": false,
+      "note": "Original source pixels; edge RGB is decontaminated only where alpha<255."
+    },
+    {
+      "id": "upper_arm_right",
+      "file": "upper_arm_right.png",
+      "bone": "upper_arm_right",
+      "parent_bone": "torso",
+      "pivot": [
+        312.0,
+        392.0
+      ],
+      "z_index": 18,
+      "rotation_recommended_deg": [
+        -2.0,
+        2.0
+      ],
+      "rotation_safe_deg": [
+        -5.0,
+        5.0
+      ],
+      "alpha_pixels": 23074,
+      "bbox": [
+        164,
+        342,
+        359,
+        621
+      ],
+      "sha256": "4c56777b55f9378c1c88e082d9a6708abb03f16f3c99702e0dd6a4aa4918a36f",
+      "source_kind": "original_photo_pixels",
+      "visible_at_rest": true,
+      "empty": false,
+      "note": "Original source pixels; edge RGB is decontaminated only where alpha<255."
+    },
+    {
+      "id": "upper_arm_left",
+      "file": "upper_arm_left.png",
+      "bone": "upper_arm_left",
+      "parent_bone": "torso",
+      "pivot": [
+        588.0,
+        392.0
+      ],
+      "z_index": 19,
+      "rotation_recommended_deg": [
+        -2.0,
+        2.0
+      ],
+      "rotation_safe_deg": [
+        -5.0,
+        5.0
+      ],
+      "alpha_pixels": 22990,
+      "bbox": [
+        541,
+        342,
+        735,
+        620
+      ],
+      "sha256": "4b526b86c35df6752279008166dec6227fdebb045e276b2494cc2210668e4062",
+      "source_kind": "original_photo_pixels",
+      "visible_at_rest": true,
+      "empty": false,
+      "note": "Original source pixels; edge RGB is decontaminated only where alpha<255."
+    },
+    {
+      "id": "forearm_right",
+      "file": "forearm_right.png",
+      "bone": "forearm_right",
+      "parent_bone": "upper_arm_right",
+      "pivot": [
+        214.0,
+        590.0
+      ],
+      "z_index": 20,
+      "rotation_recommended_deg": [
+        -1.5,
+        1.5
+      ],
+      "rotation_safe_deg": [
+        -4.0,
+        4.0
+      ],
+      "alpha_pixels": 19485,
+      "bbox": [
+        135,
+        551,
+        253,
+        805
+      ],
+      "sha256": "3ff1dba743ed60e74315af0565d090c57ecc22fe822f649acf7cad20759ccd4f",
+      "source_kind": "original_photo_pixels",
+      "visible_at_rest": true,
+      "empty": false,
+      "note": "Original source pixels; edge RGB is decontaminated only where alpha<255."
+    },
+    {
+      "id": "forearm_left",
+      "file": "forearm_left.png",
+      "bone": "forearm_left",
+      "parent_bone": "upper_arm_left",
+      "pivot": [
+        686.0,
+        590.0
+      ],
+      "z_index": 21,
+      "rotation_recommended_deg": [
+        -1.5,
+        1.5
+      ],
+      "rotation_safe_deg": [
+        -4.0,
+        4.0
+      ],
+      "alpha_pixels": 19480,
+      "bbox": [
+        647,
+        551,
+        764,
+        805
+      ],
+      "sha256": "cda458945bc949633725ba38f899d2b9cdcca92dd062109ebe4f3b40e8aff74f",
+      "source_kind": "original_photo_pixels",
+      "visible_at_rest": true,
+      "empty": false,
+      "note": "Original source pixels; edge RGB is decontaminated only where alpha<255."
+    },
+    {
+      "id": "hand_right",
+      "file": "hand_right.png",
+      "bone": "hand_right",
+      "parent_bone": "forearm_right",
+      "pivot": [
+        188.0,
+        790.0
+      ],
+      "z_index": 22,
+      "rotation_recommended_deg": [
+        0.0,
+        0.0
+      ],
+      "rotation_safe_deg": [
+        0.0,
+        0.0
+      ],
+      "alpha_pixels": 5808,
+      "bbox": [
+        135,
+        782,
+        222,
+        877
+      ],
+      "sha256": "9102d1fb9bfb780abe21787ae906284fb0416c04d8d320634febeff81987fedd",
+      "source_kind": "original_photo_pixels",
+      "visible_at_rest": true,
+      "empty": false,
+      "note": "Original source pixels; edge RGB is decontaminated only where alpha<255."
+    },
+    {
+      "id": "hand_left",
+      "file": "hand_left.png",
+      "bone": "hand_left",
+      "parent_bone": "forearm_left",
+      "pivot": [
+        712.0,
+        790.0
+      ],
+      "z_index": 23,
+      "rotation_recommended_deg": [
+        0.0,
+        0.0
+      ],
+      "rotation_safe_deg": [
+        0.0,
+        0.0
+      ],
+      "alpha_pixels": 5801,
+      "bbox": [
+        677,
+        782,
+        764,
+        877
+      ],
+      "sha256": "1cd13838b939d2169cd6f602d6167f6800595256d463a07a1ddc0d1979b9d92f",
+      "source_kind": "original_photo_pixels",
+      "visible_at_rest": true,
+      "empty": false,
+      "note": "Original source pixels; edge RGB is decontaminated only where alpha<255."
+    },
+    {
+      "id": "head",
+      "file": "head.png",
+      "bone": "head",
+      "parent_bone": "torso",
+      "pivot": [
+        450.0,
+        350.0
+      ],
+      "z_index": 24,
+      "rotation_recommended_deg": [
+        -3.0,
+        3.0
+      ],
+      "rotation_safe_deg": [
+        -5.0,
+        5.0
+      ],
+      "alpha_pixels": 47803,
+      "bbox": [
+        326,
+        109,
+        573,
+        380
+      ],
+      "sha256": "a3dc0817b7a0dc2aaf5dfe5031a2e415904e9c3e452617bf800c0f07117d0354",
+      "source_kind": "original_photo_pixels",
+      "visible_at_rest": true,
+      "empty": false,
+      "note": "Original source pixels; edge RGB is decontaminated only where alpha<255."
+    }
+  ],
+  "draw_order": [
+    "patch_neck",
+    "patch_shoulder_left",
+    "patch_shoulder_right",
+    "patch_elbow_left",
+    "patch_elbow_right",
+    "patch_hip_left",
+    "patch_hip_right",
+    "patch_knee_left",
+    "patch_knee_right",
+    "patch_ankle_left",
+    "patch_ankle_right",
+    "thigh_right",
+    "thigh_left",
+    "shin_right",
+    "shin_left",
+    "foot_right",
+    "foot_left",
+    "torso",
+    "upper_arm_right",
+    "upper_arm_left",
+    "forearm_right",
+    "forearm_left",
+    "hand_right",
+    "hand_left",
+    "head"
+  ],
+  "mirror_pairs": [
+    {
+      "left": "upper_arm_left",
+      "right": "upper_arm_right",
+      "mirror_axis_x": 449.5,
+      "applied": false,
+      "note": "Pairing only. Do not mirror source textures; the source pose is asymmetric."
+    },
+    {
+      "left": "forearm_left",
+      "right": "forearm_right",
+      "mirror_axis_x": 449.5,
+      "applied": false,
+      "note": "Pairing only. Do not mirror source textures; the source pose is asymmetric."
+    },
+    {
+      "left": "hand_left",
+      "right": "hand_right",
+      "mirror_axis_x": 449.5,
+      "applied": false,
+      "note": "Pairing only. Do not mirror source textures; the source pose is asymmetric."
+    },
+    {
+      "left": "thigh_left",
+      "right": "thigh_right",
+      "mirror_axis_x": 449.5,
+      "applied": false,
+      "note": "Pairing only. Do not mirror source textures; the source pose is asymmetric."
+    },
+    {
+      "left": "shin_left",
+      "right": "shin_right",
+      "mirror_axis_x": 449.5,
+      "applied": false,
+      "note": "Pairing only. Do not mirror source textures; the source pose is asymmetric."
+    },
+    {
+      "left": "foot_left",
+      "right": "foot_right",
+      "mirror_axis_x": 449.5,
+      "applied": false,
+      "note": "Pairing only. Do not mirror source textures; the source pose is asymmetric."
+    }
+  ],
+  "origin_attribution": {
+    "original_photo_pixels": [
+      "head.png",
+      "torso.png",
+      "upper_arm_left.png",
+      "forearm_left.png",
+      "hand_left.png",
+      "upper_arm_right.png",
+      "forearm_right.png",
+      "hand_right.png",
+      "thigh_left.png",
+      "shin_left.png",
+      "foot_left.png",
+      "thigh_right.png",
+      "shin_right.png",
+      "foot_right.png"
+    ],
+    "synthetic_repair_patches": [
+      "patch_layers/patch_neck.png",
+      "patch_layers/patch_shoulder_left.png",
+      "patch_layers/patch_shoulder_right.png",
+      "patch_layers/patch_elbow_left.png",
+      "patch_layers/patch_elbow_right.png",
+      "patch_layers/patch_hip_left.png",
+      "patch_layers/patch_hip_right.png",
+      "patch_layers/patch_knee_left.png",
+      "patch_layers/patch_knee_right.png",
+      "patch_layers/patch_ankle_left.png",
+      "patch_layers/patch_ankle_right.png"
+    ],
+    "empty_layers": [],
+    "patch_generation": "Sampled from nearby original fabric pixels, resized, blurred and color-matched. No generative model was used for image content.",
+    "patches_hidden_at_rest": true,
+    "no_generative_redraw": true
+  },
+  "animation_hints": {
+    "rotation_convention": "Degrees. Positive matches OpenCV getRotationMatrix2D (counter-clockwise in image coordinates with +Y down). Invert signs in engines where positive rotation is clockwise.",
+    "render": "Keep full-canvas offsets; premultiply alpha before filtering/rotation.",
+    "idle": {
+      "duration_ms": 2600,
+      "loop": true,
+      "root_y_px": [
+        -1,
+        2
+      ],
+      "torso_rotation_deg": [
+        -0.8,
+        0.8
+      ],
+      "head_rotation_deg": [
+        -1.5,
+        1.5
+      ],
+      "arm_micro_sway_deg": [
+        -0.8,
+        0.8
+      ]
+    },
+    "walk_in_place": {
+      "duration_ms": 720,
+      "loop": true,
+      "steps_per_cycle": 2,
+      "root_y_px": [
+        -5,
+        0
+      ],
+      "thigh_deg": [
+        -4.2,
+        4.2
+      ],
+      "knee_bend_deg": [
+        0,
+        6.0
+      ],
+      "foot_deg": [
+        -2.0,
+        1.5
+      ],
+      "arm_sway_deg": [
+        -1.0,
+        1.0
+      ],
+      "note": "Small front-view waddle. This is not a profile walking cycle."
+    },
+    "drag": {
+      "root_rotation_deg": [
+        -3.0,
+        3.0
+      ],
+      "head_lag_deg": [
+        -3.0,
+        3.0
+      ],
+      "note": "Tilt the root and let the head lag. Return to idle on release."
+    },
+    "release_drop": {
+      "duration_ms": 260,
+      "impact_root_y_px": 6,
+      "knee_bend_deg": [
+        0,
+        8.0
+      ],
+      "note": "Overshoot down, then settle to idle."
+    },
+    "click_feedback": {
+      "duration_ms": 190,
+      "head_rotation_deg": -3.5,
+      "torso_rotation_deg": 1.0,
+      "easing": "ease-out-back",
+      "note": "Head/body tilt only; never morph or repaint face pixels."
+    }
+  },
+  "limitations": [
+    "Synthetic mannequin generated by examples/make_mannequin.py. It tests geometry only; it is not a real person or a result produced from a photo.",
+    "This is a single-view photo rig. Head yaw/pitch, side views and back views are not authored.",
+    "The face is frozen source pixels. No eye, mouth, mask or expression deformation is available.",
+    "Rigid layers can show a thin seam or a notch at large joint rotations; the patch layers are synthetic fabric fills, not recovered anatomy.",
+    "Patches are invisible at rest but may look repetitive if exposed by extreme poses.",
+    "This is a 2D pivot rig, not a 3D or cloth-simulation model."
+  ],
+  "qa": {
+    "all_asset_layers_rgba": true,
+    "all_layers_same_canvas": true,
+    "body_layer_pngs": 14,
+    "empty_body_layers": [],
+    "patch_count": 11,
+    "reassembly": {
+      "visible_pixels_compared": 445924,
+      "alpha_mismatch_pixels_gt1": 0,
+      "rgb_mismatch_pixels_gt1": 0,
+      "exact": true
+    },
+    "patches_invisible_at_rest": {
+      "alpha_mismatch_pixels_gt1": 0,
+      "rgb_mismatch_pixels_gt1": 0,
+      "exact": true
+    },
+    "holes": {
+      "rest_enclosed_holes": [],
+      "zero_enclosed_holes_at_rest": true,
+      "pose_tests_informational": {
+        "REST": [],
+        "WALK / A": [],
+        "WALK / B": [
+          {
+            "area": 9,
+            "bbox": [
+              563,
+              449,
+              5,
+              9
+            ]
+          },
+          {
+            "area": 5745,
+            "bbox": [
+              430,
+              1041,
+              33,
+              351
+            ]
+          },
+          {
+            "area": 26,
+            "bbox": [
+              433,
+              1109,
+              2,
+              26
+            ]
+          }
+        ],
+        "CLICK / LAND": []
+      },
+      "pose_test_note": "Pose renders are for visual QA. A narrow gap between the legs or arms can become an enclosed negative space at some angles; this is not the same as a hole inside a body layer. Check preview_poses.png visually."
+    },
+    "face": {
+      "polygon": [
+        [
+          372.0,
+          202.0
+        ],
+        [
+          440.0,
+          184.0
+        ],
+        [
+          512.0,
+          202.0
+        ],
+        [
+          540.0,
+          270.0
+        ],
+        [
+          500.0,
+          318.0
+        ],
+        [
+          450.0,
+          330.0
+        ],
+        [
+          392.0,
+          316.0
+        ],
+        [
+          360.0,
+          270.0
+        ]
+      ],
+      "pixel_count": 19854,
+      "polygon_foreground_ratio": 1.0,
+      "rgb_equal_to_source": true,
+      "alpha_min": 255,
+      "rgb_sha256": "132f9c3a667ea7d31bcfab275c8489591619f89d4b094f9eb3c5720927032f54"
+    },
+    "background": {
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_components": 2
+    },
+    "edge_cleanup": "RGB was replaced by nearby interior colour only for pixels with 0 < alpha < 255. Alpha and all opaque pixels are unchanged.",
+    "known_unsupported": [
+      "visible hands if their layers are empty",
+      "natural large arm swing if the source pose is crossed",
+      "profile/back views",
+      "facial expression animation",
+      "seam-free large-angle rotation"
+    ]
+  },
+  "previews": {
+    "composite": "preview.png",
+    "layer_inventory": "preview_layers.png",
+    "joint_map": "preview_rig.png",
+    "pose_tests": "preview_poses.png"
+  }
+}

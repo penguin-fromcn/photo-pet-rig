@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "assets": {
+    "directory": "examples/demo_character",
+    "rig_file": "rig.json",
+    "character_png": "character_original.png",
+    "source_photo": "character_original.png",
+    "require_layered_rig": false
+  },
+  "window": {
+    "display_height_px": 340,
+    "padding_px": 16,
+    "always_on_top": true,
+    "click_through_transparent": true,
+    "no_activate": true,
+    "opacity": 1.0,
+    "shadow": true
+  },
+  "render": {
+    "fps": 30,
+    "idle_fps": 15,
+    "max_dpr": 2.0
+  },
+  "physics": {
+    "gravity_px_s2": 1800.0,
+    "air_drag_per_s": 0.12,
+    "ground_friction_per_s": 6.5,
+    "restitution": 0.42,
+    "wall_restitution": 0.45,
+    "min_bounce_speed_px_s": 45.0,
+    "max_speed_px_s": 3200.0,
+    "fixed_step_s": 0.008333333333333333,
+    "collision_margin_px": 4.0
+  },
+  "interaction": {
+    "drag_threshold_px": 5.0,
+    "release_velocity_window_s": 0.12,
+    "release_velocity_gain": 1.0,
+    "max_release_speed_px_s": 2700.0,
+    "clamp_drag_to_virtual_desktop": true
+  },
+  "behavior": {
+    "enabled": true,
+    "walk_speed_px_s": 46.0,
+    "walk_accel_px_s2": 240.0,
+    "idle_min_s": 4.0,
+    "idle_max_s": 10.0,
+    "walk_min_s": 2.2,
+    "walk_max_s": 7.5,
+    "edge_margin_px": 64.0,
+    "edge_turn_probability": 0.9,
+    "random_turn_probability_per_s": 0.045,
+    "land_duration_s": 0.34,
+    "resume_walk_after_click": true
+  },
+  "animation": {
+    "motion_scale": 1.0,
+    "idle_breathing": true,
+    "walk_cycle_hz": 1.25,
+    "walk_thigh_deg": 4.3,
+    "walk_knee_deg": 6.0,
+    "walk_foot_deg": 2.0,
+    "walk_arm_deg": 1.8,
+    "walk_forearm_deg": 1.0,
+    "walk_torso_deg": 1.0,
+    "walk_head_deg": 1.25,
+    "walk_bob_canvas_px": 17.0,
+    "idle_breath_deg": 0.65,
+    "idle_head_deg": 1.25,
+    "idle_bob_canvas_px": 7.0,
+    "idle_arm_deg": 0.55,
+    "click_hop_speed_px_s": 255.0,
+    "double_click_hop_speed_px_s": 520.0,
+    "click_duration_s": 0.5,
+    "double_click_duration_s": 0.82,
+    "land_squash": 0.93,
+    "land_tilt_deg": 2.2,
+    "smoothing_per_s": 18.0,
+    "click_cooldown_s": 0.2
+  },
+  "speech": {
+    "enabled": true,
+    "lines": [
+      "喝口水，休息一下~",
+      "我在陪你写代码。",
+      "记得站起来活动一下。",
+      "今天也要加油。",
+      "桌面巡逻中。"
+    ],
+    "duration_ms": 2400,
+    "every_min_s": 300,
+    "every_max_s": 900
+  },
+  "startup": {
+    "autostart": false
+  },
+  "debug": {
+    "show_pose": false,
+    "log_level": "INFO"
+  }
+}

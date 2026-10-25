@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+include requirements.txt
+include requirements-pet.txt
+recursive-include docs *.md *.png
+recursive-include prompts *.md *.txt
+recursive-include examples *.py *.json *.png
+recursive-include packaging *.py *.ps1 *.json *.md

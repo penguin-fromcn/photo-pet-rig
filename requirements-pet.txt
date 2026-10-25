@@ -1,0 +1,7 @@
+# Optional Windows desktop runtime (PySide6).
+# Install from the repository root with:
+#   python -m pip install -r requirements-pet.txt
+# or install the package extra:
+#   python -m pip install -e ".[pet]"
+PySide6>=6.6,<7
+Pillow>=10.0,<12
